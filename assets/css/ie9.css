@@ -1,0 +1,36 @@
+/*
+	Dimension by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+/* BG */
+
+	#bg:before {
+		background-image: url('https://res.cloudinary.com/runar-kristoffersen/image/upload/w_800,h_800,c_fill,q_auto/v1511014038/bronnoy.jpg');
+	}
+
+/* Header */
+
+	#header .logo {
+		margin: 0 auto;
+	}
+
+	#header .content {
+		display: inline-block;
+	}
+
+	#header nav ul {
+		display: inline-block;
+	}
+
+		#header nav ul li {
+			display: inline-block;
+		}
+
+/* Main */
+
+	#main article {
+		margin: 100vh auto;
+		opacity: 1 !important;
+	}
