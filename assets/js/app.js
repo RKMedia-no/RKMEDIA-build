@@ -708,7 +708,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     // Internet Explorer 6-11
     var isIE = /*@cc_on!@*/ false || !!document.documentMode
     if (isIE) {
-			console.log('we are on IE. Doing something different')
+      console.log('we are on IE. Doing something different')
 
       var flexboxFixTimeoutId;
 
@@ -1075,6 +1075,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
       });
 
   });
+  WebFontConfig = {
+    google: {
+      families: ['Source Code Pro:400,700']
+    }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
 
 })(jQuery);
 
