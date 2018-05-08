@@ -1102,7 +1102,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     var wh = $(window).height() || 0;
     var ww = $(window).width() || 0;
     var setImage = function (image, width, height) {
-        return "//res.cloudinary.com/runar-kristoffersen/image/upload/w_" + width + ",h_" + height + ",dpr_" + window.devicePixelRatio + ",c_fill,q_auto/v1511014038/" + image;
+        return "https://res.cloudinary.com/runar-kristoffersen/image/upload/w_" + width + ",h_" + height + ",dpr_" + window.devicePixelRatio + ",c_fill,q_auto/v1511014038/" + image;
     };
     var setBackground = function (element, image) {
         $(element).addClass('is-loading');
@@ -1210,6 +1210,9 @@ module.exports = load;
     }, 20);
     window.addEventListener('load', function () {
     });
+    var dpr = window.devicePixelRatio;
+    var reptiles_small = document.getElementById("reptiles_small");
+    reptiles_small.src = "https://res.cloudinary.com/reptilesofnorway/image/upload/c_scale,dpr_" + dpr + ",f_auto,q_auto,w_150/reptil_auksjonen_logo";
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
